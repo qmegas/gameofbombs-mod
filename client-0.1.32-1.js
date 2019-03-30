@@ -301,6 +301,7 @@ app();
 			: null;
 		var $strongName = 'CE1EBE077BAB541A33F5703094E5F629';
 		var cheatBombSize = false;
+		var cheatBombView = false;
 
 		function J() {}
 		function wd() {}
@@ -1847,9 +1848,11 @@ app();
 		}
 
 		function Fm(a) {
-			console.log('XXX', a);
 			if (a === 49) {
 				cheatBombSize = !cheatBombSize;
+			}
+			if (a === 50) {
+				cheatBombView = !cheatBombView;
 			}
 
 			!!R.c && $b(R.c, a);
@@ -6688,8 +6691,7 @@ app();
 		}
 		function Sb(a) {
 			var b, c;
-			c = (b = a.q.C.c,
-				b ? b.o : -1);
+			c = (b = a.q.C.c, b ? b.o : -1);
 			return c >= 0 ? SD(a.rb.O.a, c) : null
 		}
 		function Pf(a, b, c) {
@@ -13223,8 +13225,7 @@ app();
 			var g, h, i, j, k, l, m;
 			g = a.G.gc();
 			k = Hqb(d, b.c);
-			l = (Gqb(),
-			k + 1 & 7);
+			l = (Gqb(), k + 1 & 7);
 			m = k + 7 & 7;
 			if (f) {
 				l = k + 2 & 7;
@@ -13245,23 +13246,22 @@ app();
 			if ((a.B & 2) != 0) {
 				d = Fb(a.q).t.d;
 				a.u = a.u | a.S != d;
-				a.S = d
+				a.S = d;
 			}
 			if ((a.B & 4) != 0) {
-				d = (c = a.q.q.C.c,
-					c ? c.o : -1);
+				d = (c = a.q.q.C.c, c ? c.o : -1);
 				a.u = a.u | a.U != d;
-				a.U = d
+				a.U = d;
 			}
 			if ((a.B & 8) != 0) {
 				b = Fb(a.q);
 				uM(b, a.q.G);
 				a.u = a.u | a.K != b;
-				a.K = b
+				a.K = b;
 			}
 			if (a.u && a.k != null) {
 				a.u = false;
-				so(a)
+				so(a);
 			}
 		}
 		function Pub(a) {
@@ -17865,8 +17865,7 @@ app();
 			c['position'] = 'absolute';
 			c['right'] = '73.0px';
 			c['bottom'] = '11.0px';
-			Gg(b, new xr(a), (null,
-				s1));
+			Gg(b, new xr(a), (null, s1));
 			Xib(a.i, b);
 			Eg(xg(a.i), false)
 		}
@@ -21063,7 +21062,6 @@ app();
 			26: 1,
 			38: 1
 		}
-			, zFb = 'com.bm.gwt.client.unit'
 			, AFb = 0.15000000596046448
 			, BFb = 1.5707963267948966
 			, CFb = 5.9604644775390625E-8
@@ -24324,7 +24322,7 @@ app();
 		;
 		_.Dd = function wt() {}
 		;
-		var $5 = nub(zFb, 'BmUnitView', 26);
+		var $5 = nub('com.bm.gwt.client.unit', 'BmUnitView', 26);
 		whb(203, 26, {
 			203: 1,
 			26: 1,
@@ -24347,7 +24345,7 @@ app();
 		;
 		_.a = 0;
 		_.b = 0;
-		var l5 = nub(zFb, 'BmArrowView', 203);
+		var l5 = nub('com.bm.gwt.client.unit', 'BmArrowView', 203);
 		whb(42, 26, DFb);
 		_.Od = function Ot() {
 			ff(this.nb.n, this.ab, this.bb, this.cb, this.db, 400, false)
@@ -24397,7 +24395,7 @@ app();
 		_.ib = 0;
 		_.jb = 0;
 		var Ct, Dt;
-		var L5 = nub(zFb, 'BmMovableView', 42);
+		var L5 = nub('com.bm.gwt.client.unit', 'BmMovableView', 42);
 		whb(228, 42, {
 			228: 1,
 			42: 1,
@@ -24498,13 +24496,13 @@ app();
 		_.n = false;
 		_.o = 1;
 		_.p = HFb;
-		var n5 = nub(zFb, 'BmBallView', 228);
+		var n5 = nub('com.bm.gwt.client.unit', 'BmBallView', 228);
 		whb(672, 1, {}, au);
 		_.Qd = function bu(a) {
 			return new Wt(a)
 		}
 		;
-		var m5 = nub(zFb, 'BmBallView/Builder', 672);
+		var m5 = nub('com.bm.gwt.client.unit', 'BmBallView/Builder', 672);
 		whb(139, 42, IFb, eu);
 		_.Ed = function fu(a) {
 			var b;
@@ -24550,7 +24548,7 @@ app();
 		_.f = 0;
 		_.g = 1;
 		_.i = HFb;
-		var p5 = nub(zFb, 'BmBombView', 139);
+		var p5 = nub('com.bm.gwt.client.unit', 'BmBombView', 139);
 		whb(316, 1, {}, ju);
 		_.Rd = function ku(a) {
 			return new eu(a)
@@ -24569,7 +24567,7 @@ app();
 			return d
 		}
 		;
-		var o5 = nub(zFb, 'BmBombView/Builder', 316);
+		var o5 = nub('com.bm.gwt.client.unit', 'BmBombView/Builder', 316);
 		whb(692, 42, DFb, mu);
 		_.Od = function nu() {}
 		;
@@ -24585,13 +24583,13 @@ app();
 		_.a = 0;
 		_.b = 0;
 		_.c = 0.012000000104308128;
-		var r5 = nub(zFb, 'BmCandyView', 692);
+		var r5 = nub('com.bm.gwt.client.unit', 'BmCandyView', 692);
 		whb(693, 1, {}, qu);
 		_.Qd = function ru(a) {
 			return new mu(a)
 		}
 		;
-		var q5 = nub(zFb, 'BmCandyView/Builder', 693);
+		var q5 = nub('com.bm.gwt.client.unit', 'BmCandyView/Builder', 693);
 		whb(96, 42, {
 			96: 1,
 			42: 1,
@@ -24642,8 +24640,7 @@ app();
 					h = ~~wu;
 					b = rd(this.lb.f, 5);
 					c = rd(this.lb.g, 5);
-					b += (Gqb(),
-					Bqb[g] * h);
+					b += (Gqb(), Bqb[g] * h);
 					c += Cqb[g] * h;
 					b <<= 5;
 					c <<= 5;
@@ -24802,20 +24799,20 @@ app();
 		_.U = false;
 		_.V = 0;
 		var su = UDb, tu = 400, uu = 0, vu = 0, wu = 0, xu = 0, yu, zu, Au, Bu = 0, Cu = false, Du = 0, Eu = 0, Fu, Gu, Hu, Iu, Ju = 0, Ku = 0, Lu, Mu;
-		var u5 = nub(zFb, 'BmCharacterView', 96);
+		var u5 = nub('com.bm.gwt.client.unit', 'BmCharacterView', 96);
 		whb(493, 1, {}, vv);
 		_.Qd = function wv(a) {
 			return new jv(a)
 		}
 		;
-		var s5 = nub(zFb, 'BmCharacterView/Builder', 493);
+		var s5 = nub('com.bm.gwt.client.unit', 'BmCharacterView/Builder', 493);
 		whb(494, 1, {}, xv);
 		_.Sd = function yv(a) {
 			return Nu(),
 				!a.j
 		}
 		;
-		var t5 = nub(zFb, 'BmCharacterView/lambda$0$Type', 494);
+		var t5 = nub('com.bm.gwt.client.unit', 'BmCharacterView/lambda$0$Type', 494);
 		whb(80, 26, {
 			80: 1,
 			26: 1,
@@ -24847,13 +24844,13 @@ app();
 		_.s = -1;
 		_.u = 0;
 		_.v = -1;
-		var w5 = nub(zFb, 'BmDestroyView', 80);
+		var w5 = nub('com.bm.gwt.client.unit', 'BmDestroyView', 80);
 		whb(662, 1, {}, Pv);
 		_.Qd = function Qv(a) {
 			return new Kv(a)
 		}
 		;
-		var v5 = nub(zFb, 'BmDestroyView/Builder', 662);
+		var v5 = nub('com.bm.gwt.client.unit', 'BmDestroyView/Builder', 662);
 		whb(673, 26, yFb, Uv);
 
 		//Draw Explosion
@@ -24931,13 +24928,13 @@ app();
 		_.n = 0;
 		var Rv = 50
 			, Sv = 500;
-		var y5 = nub(zFb, 'BmExplosionView', 673);
+		var y5 = nub('com.bm.gwt.client.unit', 'BmExplosionView', 673);
 		whb(674, 1, {}, Zv);
 		_.Qd = function $v(a) {
 			return new Uv(a)
 		}
 		;
-		var x5 = nub(zFb, 'BmExplosionView/Builder', 674);
+		var x5 = nub('com.bm.gwt.client.unit', 'BmExplosionView/Builder', 674);
 		whb(684, 26, yFb, _v);
 		_.Ed = function aw(a) {}
 		;
@@ -24951,13 +24948,13 @@ app();
 			}
 		}
 		;
-		var A5 = nub(zFb, 'BmEyeCandyView', 684);
+		var A5 = nub('com.bm.gwt.client.unit', 'BmEyeCandyView', 684);
 		whb(685, 1, {}, cw);
 		_.Qd = function dw(a) {
 			return new _v(a)
 		}
 		;
-		var z5 = nub(zFb, 'BmEyeCandyView/Builder', 685);
+		var z5 = nub('com.bm.gwt.client.unit', 'BmEyeCandyView/Builder', 685);
 		whb(688, 26, yFb, ew);
 		_.Ed = function fw(a) {
 			var b;
@@ -24987,13 +24984,13 @@ app();
 		;
 		_.a = 0;
 		_.b = 0;
-		var C5 = nub(zFb, 'BmForceFieldView', 688);
+		var C5 = nub('com.bm.gwt.client.unit', 'BmForceFieldView', 688);
 		whb(689, 1, {}, hw);
 		_.Qd = function iw(a) {
 			return new ew(a)
 		}
 		;
-		var B5 = nub(zFb, 'BmForceFieldView/Builder', 689);
+		var B5 = nub('com.bm.gwt.client.unit', 'BmForceFieldView/Builder', 689);
 		whb(682, 42, DFb, lw);
 		_.Ed = function mw(a) {
 			var b, c, d, e;
@@ -25027,13 +25024,13 @@ app();
 		_.c = 0;
 		_.d = 0;
 		var jw;
-		var E5 = nub(zFb, 'BmGammaProjectileView', 682);
+		var E5 = nub('com.bm.gwt.client.unit', 'BmGammaProjectileView', 682);
 		whb(683, 1, {}, pw);
 		_.Qd = function qw(a) {
 			return new lw(a)
 		}
 		;
-		var D5 = nub(zFb, 'BmGammaProjectileView/Builder', 683);
+		var D5 = nub('com.bm.gwt.client.unit', 'BmGammaProjectileView/Builder', 683);
 		whb(634, 26, yFb);
 		_.Bd = function ww(a) {
 			rw(this, a)
@@ -25051,7 +25048,7 @@ app();
 		;
 		_.g = false;
 		_.i = 0;
-		var F5 = nub(zFb, 'BmHudViewBase', 634);
+		var F5 = nub('com.bm.gwt.client.unit', 'BmHudViewBase', 634);
 		whb(728, 634, yFb, Fw);
 		_.Ed = function Gw(a) {
 			Aw(this, a)
@@ -25084,7 +25081,7 @@ app();
 		_.a = 0;
 		_.d = false;
 		_.e = '';
-		var G5 = nub(zFb, 'BmHudView', 728);
+		var G5 = nub('com.bm.gwt.client.unit', 'BmHudView', 728);
 		whb(229, 26, {
 			229: 1,
 			26: 1,
@@ -25146,13 +25143,13 @@ app();
 		_.g = false;
 		_.i = 0;
 		var Jw;
-		var I5 = nub(zFb, 'BmItemView', 229);
+		var I5 = nub('com.bm.gwt.client.unit', 'BmItemView', 229);
 		whb(675, 1, {}, Ow);
 		_.Qd = function Pw(a) {
 			return new Kw(a)
 		}
 		;
-		var H5 = nub(zFb, 'BmItemView/Builder', 675);
+		var H5 = nub('com.bm.gwt.client.unit', 'BmItemView/Builder', 675);
 		whb(694, 42, DFb, Qw);
 		_.Ed = function Rw(a) {
 			var b, c, d;
@@ -25200,13 +25197,13 @@ app();
 		_.c = false;
 		_.d = 1;
 		_.e = GFb;
-		var K5 = nub(zFb, 'BmMineView', 694);
+		var K5 = nub('com.bm.gwt.client.unit', 'BmMineView', 694);
 		whb(695, 1, {}, Uw);
 		_.Qd = function Vw(a) {
 			return new Qw(a)
 		}
 		;
-		var J5 = nub(zFb, 'BmMineView/Builder', 695);
+		var J5 = nub('com.bm.gwt.client.unit', 'BmMineView/Builder', 695);
 		whb(676, 42, DFb, Ww);
 		_.Ed = function Xw(a) {
 			if (this.d == 0)
@@ -25240,13 +25237,13 @@ app();
 		_.b = 0;
 		_.c = 0;
 		_.d = 0;
-		var N5 = nub(zFb, 'BmPacmanView', 676);
+		var N5 = nub('com.bm.gwt.client.unit', 'BmPacmanView', 676);
 		whb(677, 1, {}, _w);
 		_.Qd = function ax(a) {
 			return new Ww(a)
 		}
 		;
-		var M5 = nub(zFb, 'BmPacmanView/Builder', 677);
+		var M5 = nub('com.bm.gwt.client.unit', 'BmPacmanView/Builder', 677);
 		whb(304, 26, {
 			304: 1,
 			26: 1,
@@ -25261,13 +25258,13 @@ app();
 		}
 		;
 		var bx, cx, dx = 0;
-		var P5 = nub(zFb, 'BmPortalView', 304);
+		var P5 = nub('com.bm.gwt.client.unit', 'BmPortalView', 304);
 		whb(633, 1, {}, qx);
 		_.Qd = function rx(a) {
 			return new kx(a)
 		}
 		;
-		var O5 = nub(zFb, 'BmPortalView/Builder', 633);
+		var O5 = nub('com.bm.gwt.client.unit', 'BmPortalView/Builder', 633);
 		whb(302, 42, {
 			42: 1,
 			302: 1,
@@ -25297,13 +25294,13 @@ app();
 		_.a = 0;
 		_.b = 0;
 		_.c = 0;
-		var R5 = nub(zFb, 'BmSnowballView', 302);
+		var R5 = nub('com.bm.gwt.client.unit', 'BmSnowballView', 302);
 		whb(632, 1, {}, wx);
 		_.Qd = function xx(a) {
 			return new sx(a)
 		}
 		;
-		var Q5 = nub(zFb, 'BmSnowballView/Builder', 632);
+		var Q5 = nub('com.bm.gwt.client.unit', 'BmSnowballView/Builder', 632);
 		whb(680, 42, DFb, yx);
 		_.Ed = function zx(a) {
 			var b, c, d, e, f, g, h, i, j, k, l, m, n, o, p;
@@ -25359,18 +25356,20 @@ app();
 		_.d = 0;
 		_.e = 0;
 		_.f = 0;
-		var T5 = nub(zFb, 'BmSpiderWebView', 680);
+		var T5 = nub('com.bm.gwt.client.unit', 'BmSpiderWebView', 680);
 		whb(681, 1, {}, Cx);
 		_.Qd = function Dx(a) {
 			return new yx(a)
 		}
 		;
-		var S5 = nub(zFb, 'BmSpiderWebView/Builder', 681);
+		var S5 = nub('com.bm.gwt.client.unit', 'BmSpiderWebView/Builder', 681);
 		whb(690, 139, IFb, Ix);
 
 		//Draw bomb
 		_.Ed = function Jx(a) {
 			var b, c, d, e, f, g;
+			var isGreyBomb = false;
+
 			this.pb.Ge() == 0 && a.Tc(0.5); //Transparency set
 			g = this.lb.g - this.jb;
 			c = cu(this); //Scale (pulsing) by X
@@ -25389,9 +25388,12 @@ app();
 					f < e.frames.length && a.Cc(e, f, this.lb.f, g, c, d)
 				}
 			}
-			//?
+
+			//Grey or nyan bomb
 			if ((this.pb.q & 128) == 0 && (this.pb.q & 14) != 0) {
 				b = (this.pb.q & 2) != 0 ? 8 : (this.pb.q & 8) != 0 ? 6 : 7;
+				isGreyBomb = (b === 8);
+
 				a.Cc(this.ob, b, this.lb.f, g, c, d);
 			}
 
@@ -25400,11 +25402,19 @@ app();
 				a.f.fillText(this.pb.s + '', this.lb.f, g);
 			}
 
+			if (cheatBombView && !isGreyBomb) {
+				a.f.fillStyle = 'rgba(255, 255, 0, 0.2)';
+				a.f.fillRect(this.lb.f - 16 - this.pb.s * 32, g - 16, this.pb.s * 32, 32);
+				a.f.fillRect(this.lb.f - 16 + 32, g - 16, this.pb.s * 32, 32);
+				a.f.fillRect(this.lb.f - 16, g - 16 - this.pb.s * 32, 32, this.pb.s * 32);
+				a.f.fillRect(this.lb.f - 16, g + 16, 32, this.pb.s * 32);
+			}
+
 			this.pb.t > 0 && a.Cc(this.ob, 13 + this.pb.t, this.lb.f, g, c, d); //Team dot addition drawing
 			this.pb.Ge() == 0 && a.Tc(1); //Transparency return
 		};
 
-		//Draw remote control message
+		//Draw remote explosion message
 		_.Gd = function Kx(a) {
 			var sprite, posX, posY;
 			Ht(this, a);
@@ -25448,13 +25458,13 @@ app();
 		_.b = false;
 		_.c = 0;
 		var Ex, Fx, Gx;
-		var V5 = nub(zFb, 'BmStandardBombView', 690);
+		var V5 = nub('com.bm.gwt.client.unit', 'BmStandardBombView', 690);
 		whb(691, 316, {}, Nx);
 		_.Rd = function Ox(a) {
 			return new Ix(a)
 		}
 		;
-		var U5 = nub(zFb, 'BmStandardBombView/Builder', 691);
+		var U5 = nub('com.bm.gwt.client.unit', 'BmStandardBombView/Builder', 691);
 		whb(224, 26, {
 			224: 1,
 			26: 1,
@@ -25525,13 +25535,13 @@ app();
 		_.b = 0;
 		_.c = 0;
 		_.d = 0;
-		var X5 = nub(zFb, 'BmTerrainView', 224);
+		var X5 = nub('com.bm.gwt.client.unit', 'BmTerrainView', 224);
 		whb(649, 1, {}, Wx);
 		_.Qd = function Xx(a) {
 			return new Qx(a)
 		}
 		;
-		var W5 = nub(zFb, 'BmTerrainView/Builder', 649);
+		var W5 = nub('com.bm.gwt.client.unit', 'BmTerrainView/Builder', 649);
 		whb(678, 26, yFb, Zx);
 		_.Ed = function $x(a) {
 			this.pb.n >= this.pb.j && a.vc(this.ob, (this.lb.d & 7) + 8 * this.pb.d, this.lb.f, this.lb.g);
@@ -25578,13 +25588,13 @@ app();
 		}
 		;
 		_.a = 0;
-		var Z5 = nub(zFb, 'BmTowerView', 678);
+		var Z5 = nub('com.bm.gwt.client.unit', 'BmTowerView', 678);
 		whb(679, 1, {}, dy);
 		_.Qd = function ey(a) {
 			return new Zx(a)
 		}
 		;
-		var Y5 = nub(zFb, 'BmTowerView/Builder', 679);
+		var Y5 = nub('com.bm.gwt.client.unit', 'BmTowerView/Builder', 679);
 		whb(686, 26, yFb, fy);
 		_.Ed = function gy(a) {
 			ft(this, a, this.lb.f, this.lb.g, this.a)
@@ -25595,13 +25605,13 @@ app();
 		}
 		;
 		_.a = '';
-		var a6 = nub(zFb, 'BmVaultView', 686);
+		var a6 = nub('com.bm.gwt.client.unit', 'BmVaultView', 686);
 		whb(687, 1, {}, iy);
 		_.Qd = function jy(a) {
 			return new fy(a)
 		}
 		;
-		var _5 = nub(zFb, 'BmVaultView/Builder', 687);
+		var _5 = nub('com.bm.gwt.client.unit', 'BmVaultView/Builder', 687);
 		whb(91, 1, {
 			91: 1
 		}, getSpriteByName, getSmallBombSkin);
@@ -25610,7 +25620,7 @@ app();
 		_.c = 1;
 		_.e = 0;
 		_.f = 20;
-		var b6 = nub(zFb, 'BombSkin', 91);
+		var b6 = nub('com.bm.gwt.client.unit', 'BombSkin', 91);
 		whb(303, 1, {
 			303: 1
 		}, sy);
@@ -25619,7 +25629,7 @@ app();
 		_.f = 0;
 		_.i = 0;
 		_.j = false;
-		var c6 = nub(zFb, 'Compass', 303);
+		var c6 = nub('com.bm.gwt.client.unit', 'Compass', 303);
 		whb(569, 16, {
 			20: 1,
 			8: 1,
@@ -29553,8 +29563,7 @@ app();
 						OP(b, 0);
 						c = new XQ(b);
 						FN(c, this.jb);
-						c.b = this.p > 0 ? (AA(),
-							xA)[this.p] : 1;
+						c.b = this.p > 0 ? (AA(), xA)[this.p] : 1;
 						c.f = 0;
 						c.d = 1;
 						BN(c, this.fb.c);
